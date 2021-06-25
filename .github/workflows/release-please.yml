@@ -1,13 +1,8 @@
-on:
-  push:
-    branches:
-      - main
-name: release-please
+version: 2
 jobs:
-  release-please:
-    runs-on: ubuntu-latest
+  build:
+    docker:
+      - image: circleci/node:8
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v2
-        with:
-          release-type: node
-          package-name: release-please-action
+      - checkout
+      - run: npx semantic-release
