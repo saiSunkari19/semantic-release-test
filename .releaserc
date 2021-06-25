@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "branch": "test",
+=======
+    "branch": "master",
+>>>>>>> 9b2398fa3348c2c383ea8d91e8a2e0437ab9771f
     "plugins": [
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
